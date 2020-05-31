@@ -1,0 +1,26 @@
+{
+  "name": "PROJECT_GOMYCODE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js --prefix BACKEND",
+    "client": "npm start --prefix CLIENT",
+    "devop": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabeurios/Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabeurios/Project/issues"
+  },
+  "homepage": "https://github.com/sabeurios/Project#readme",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "faker": "^4.1.0"
+  }
+}

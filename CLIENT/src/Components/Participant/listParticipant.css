@@ -1,0 +1,32 @@
+.card-participant{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+
+}
+.list-Participant{
+    border: 3px #8c7c7c solid;
+    border-radius: 30px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    background-color: #a3697f42;
+    margin: 30px;
+    padding: 20px;
+}
+.participant-info{
+    color: black;
+    font-size: x-large;
+
+}
+.span-info{
+    font-size: x-large;
+    color: purple;
+}
+.list-participant-title{
+    font-size: xxx-large;
+    color: plum;
+    font-weight: 900;
+    font-style: italic;
+}

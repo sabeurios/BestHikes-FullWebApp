@@ -1,0 +1,13 @@
+.title{
+  display: flex;
+  align-items: center;
+}
+.title h6{
+  margin: 0 4%;
+}
+.title img{
+  margin: 0 1.85%;
+}
+.title input{
+  max-width: 60%;
+}

@@ -1,0 +1,117 @@
+header {
+  position: relative;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.btn-auth {
+  position: absolute;
+  top: 2%;
+  left: 85%;
+  z-index: 1;
+  display: flex;
+  width: 17%;
+}
+.btn-go {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  z-index: 1;
+}
+
+button {
+  margin: 1vh;
+}
+
+/* @media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900")
+      no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700");
+
+/* body {
+  font-family: "Nunito", sans-serif;
+} */
+
+.a {
+  color: #e7484f;
+}
+.b {
+  color: #f68b1d;
+}
+.c {
+  color: #fced00;
+}
+.d {
+  color: #009e4f;
+}
+.e {
+  color: #00aac3;
+}
+.f {
+  color: #732982;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.rainbow {
+  background-color: lightgray;
+  border-radius: 4px;
+  color:olive;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.rainbow-5:hover {
+  background-image: linear-gradient(
+    to right,
+    #e7484f,
+    #e7484f 16.65%,
+    #f68b1d 16.65%,
+    #f68b1d 33.3%,
+    #fced00 33.3%,
+    #fced00 49.95%,
+    #009e4f 49.95%,
+    #009e4f 66.6%,
+    #00aac3 66.6%,
+    #00aac3 83.25%,
+    #732982 83.25%,
+    #732982 100%,
+    #e7484f 100%
+  );
+  animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+
+

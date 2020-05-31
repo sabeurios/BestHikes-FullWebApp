@@ -1,0 +1,78 @@
+
+.btnx {
+    cursor: pointer;
+    background-color: #000;
+    width: 25vh;
+    height: 7vh;
+    /* line-height: 64px; */
+    position: absolute;
+    left: 7%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
+    border-radius: 1vh;
+  }
+  .btnx span {
+    color: white;
+    display: block;
+    padding-left: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    font: bold;
+    transform: scaleX(0.6);
+    letter-spacing: 0.5vh;
+    transform-origin: center left;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  .btnx em {
+    position: absolute;
+    height: 1px;
+    background:orange;
+    width: 47%;
+    right: 5%;
+    top: 50%;
+    transform: scaleX(0.25);
+    transform-origin: center right;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  .btnx:before,
+  .btnx:after {
+    content: '';
+    background: #fff;
+    height: 50%;
+    width: 0;
+    position: absolute;
+    transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .btnx:before {
+    top: 0;
+    left: 0;
+    right: auto;
+  }
+  .btnx:after {
+    bottom: 0;
+    right: 0;
+    left: auto;
+  }
+  .btnx:hover:before {
+    width: 100%;
+    right: 0;
+    left: auto;
+  }
+  .btnx:hover:after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+  .btnx:hover span {
+    color: #000;
+  }
+  .btnx:hover em {
+    background: #000;
+    transform: scaleX(1);
+  }
+  
